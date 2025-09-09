@@ -1,0 +1,8 @@
+// Colors to switch between
+const colors = ["#3498db", "#2ecc71", "#9b59b6", "#e74c3c", "#f39c12"];
+let current = 0;
+
+function changeBackground() {
+  current = (current + 1) % colors.length;
+  document.body.style.backgroundColor = colors[current];
+}
